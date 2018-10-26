@@ -1,0 +1,12 @@
+npm intsall vue
+npm install --global vue-cli//手脚架工具
+vue init webpack aa(项目名)
+
+cd aa
+npm install
+
+npm run dev
+
+
+npm install jquery --save-dev //注入jQuery依赖
+
