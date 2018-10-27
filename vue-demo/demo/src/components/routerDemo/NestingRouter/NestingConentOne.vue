@@ -1,16 +1,16 @@
 <template>
   <div>
-    {{$route.params.id}}
+    {{msg}}
   </div>
 </template>
 <script>
   export default {
-    name:'DynamicRouter',
+    name:'NestingConentOne',
     data(){
-      return{
-
+      return {
+        msg:'嵌套内容一'
       }
     }
-
   }
+
 </script>
