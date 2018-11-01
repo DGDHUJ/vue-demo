@@ -9,6 +9,7 @@ const DynamicRouter = () => import('@/components/routerDemo/DynamicRouter')
 const NestingRouter = () => import('@/components/routerDemo/NestingRouter')
 const NestingConentOne = () => import('@/components/routerDemo/NestingRouter/NestingConentOne')
 const NestingConentTwo = () => import('@/components/routerDemo/NestingRouter/NestingConentTwo')
+const ShowVuex = () =>  import('@/components/vuexDemo/showVuex')
 // const HelloWorld = (resolve) => { import( '../componets/HelloWorld').then((module) => { resolve(module)})}
 // const DynamicRouter = (resolve) => { import('../componets/DynamicRouter').then((module) => { resolve(module)} )}
 Vue.use(Router)
@@ -40,6 +41,11 @@ const router  = new Router({
           component: NestingConentTwo,
         }
       ]
+    },
+    {
+      path:"/ShowVuex",
+      name:'ShowVuex',
+      component: ShowVuex
     }
 
   ]

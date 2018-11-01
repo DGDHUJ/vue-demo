@@ -4,7 +4,7 @@
     <div class="hello">
       <div class="tab" @click="_toroute(1)">动态路由</div>
       <div class="tab" @click="_toroute(2)">嵌套路由</div>
-      <div class="tab">动态路由</div>
+      <div class="tab" @click="_toroute(3)">Vuex-Demo</div>
       <div class="tab">动态路由</div>
     </div>
   </div>
@@ -26,6 +26,9 @@ export default {
       }
       if(index === 2){
         this.$router.push({path:'NestingRouter'})
+      }
+      if(index === 3){
+        this.$router.push({path:'showVuex'})
       }
 
     }
