@@ -12,6 +12,8 @@ const NestingConentTwo = () => import('@/components/routerDemo/NestingRouter/Nes
 const father = () => import('@/components/fandcvalue/father')
 const children = () => import('@/components/fandcvalue/children')
 const ShowVuex = () =>  import('@/components/vuexDemo/showVuex')
+const vueQuillEditor = () =>  import('@/components/vueQuillEditor/vueQuillEditor')
+const magnifier = () => import('@/components/magnifier/magnifier')
 // const HelloWorld = (resolve) => { import( '../componets/HelloWorld').then((module) => { resolve(module)})}
 // const DynamicRouter = (resolve) => { import('../componets/DynamicRouter').then((module) => { resolve(module)} )}
 Vue.use(Router)
@@ -21,6 +23,16 @@ const router  = new Router({
       path: '/',
       name: 'HelloWorld',
       component: HelloWorld
+    },
+    {
+      path:'/magnifier',
+      name:'magnifier',
+      component:magnifier
+    },
+    {
+      path: '/vueQuillEditor',
+      name: 'vueQuillEditor',
+      component: vueQuillEditor
     },
     {
       path:"/DynamicRouter/:id",

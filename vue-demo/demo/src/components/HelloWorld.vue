@@ -5,7 +5,8 @@
       <div class="tab" @click="_toroute(1)">动态路由</div>
       <div class="tab" @click="_toroute(2)">嵌套路由</div>
       <div class="tab" @click="_toroute(3)">Vuex-Demo</div>
-      <div class="tab">动态路由</div>
+      <div class="tab" @click="_toroute(4)">放大镜查看图片</div>
+      <div class="tab" @click="submitForm">axios</div>
     </div>
   </div>
 
@@ -30,7 +31,21 @@ export default {
       if(index === 3){
         this.$router.push({path:'showVuex'})
       }
+      if(index === 4){
+        this.$router.push({path:'magnifier'})
+      }
 
+    },
+    submitForm () {
+      debugger
+      console.log( this.$axios);
+      this.$axios.getAddressJson().then(function (res) {
+        //成功之后处理逻辑
+        console.log(res)
+      },function (res) {
+        //失败之后处理逻辑
+        console.log("error:"+res)
+      })
     }
 
   }

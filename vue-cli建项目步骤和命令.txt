@@ -10,3 +10,5 @@ npm run dev
 
 npm install jquery --save-dev //×¢ÈëjQueryÒÀÀµ
 
+npm install axios --save-dev //×¢ÈëaxiosÒÀÀµ
+
