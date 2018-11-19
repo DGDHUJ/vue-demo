@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<title>B</title>
+	</head>
+	<style type="text/css">
+		
+		*{
+	    	margin: 0;
+	    	padding: 0;
+	    }
+
+		html {
+		  font-size: 12px !important;
+		}
+
+		html {
+		  font-family: 'Avenir', Helvetica, Arial, sans-serif !important;
+		  -webkit-font-smoothing: antialiased !important;
+		  -moz-osx-font-smoothing: grayscale !important;
+		}
+		@media screen and (min-width: 1200px) {
+		  html {
+		    font-size: 14px !important;
+		  }
+		  .layout {
+		   width: 1200px;
+		  }
+		}
+
+	    body{
+	    	text-align:center;
+	    }
+	    .main{
+	    	min-width: 1000px;
+	    	max-width: 1200px;
+	    	margin:0 auto;
+	    	overflow: hidden;
+	    }
+	    .showform1{
+			min-height: 895px;
+			width: 100%;
+			min-width: 1000px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			-webkit-background-size: cover;
+			-o-background-size: cover;
+			background-position: center 0;
+	        background-image:url('./img/b-background1.jpg');
+		}
+		.title{
+	      overflow: hidden;
+	      padding: 10px 0;
+		}
+		.header{
+			overflow: hidden;
+			width: 100%;
+		}
+		.header>.logoimg{
+			float: left;
+			width: 150px;
+	    	height: 50px;
+		}
+		.tab{
+			float: left;
+			margin-left: 100px;
+		}
+		.reBtn{
+			font-size: 14px;
+	    	color: white;
+			float: right;
+			line-height: 30px;
+	    	margin: 10px 0 10px 50px;
+		    padding: 0 30px;
+		    border: 1px solid #ddd;
+		    border-radius: 20px;
+		    background: #4B3F91;
+		    cursor: pointer;
+		}
+		.reBtn:active{
+			font-size: 15px;
+		}
+		.tab>.tabs{
+			float: left;
+			margin: 0 20px;
+			cursor: pointer;
+			line-height: 50px;
+			font-size: 16px;
+			color: block;
+		}
+		.tab>.tabs-active{
+			border-bottom: 2px solid #4B3F91;
+			color: #4B3F91;
+			font-weight: bold;
+		}
+		.tab>.tabs:hover{
+			color: #4B3F91;
+			font-weight: bold;
+			border-bottom: 2px solid #4B3F91;
+		}
+		.showform1-content{
+			float: left;
+			width: 50%;
+			text-align: left;
+			padding: 20% 0 0 0;
+			font-size: 16px;
+
+		}
+		.showform1-p1{
+            font-size: 21px;
+            font-weight: bold;
+            line-height: 60px;
+		}
+		.showform1-p2{
+			font-weight: bold;
+		    line-height: 60px;
+		    font-size: 40px;
+		}
+		.showform1-Btn{
+	    	margin: 20px 0;
+		}
+		.showform1-Btn>.Btn1{
+			width: 200px;
+			line-height: 45px;
+			margin:0 0;
+			text-align: center;
+			border-radius: 20px;
+			  background: linear-gradient(to right,#4F3097,#652CEB); 
+			cursor: pointer;
+			color: white;
+			font-size: 16px;
+		}
+		.showform1-Btn>.Btn1:active{
+			width: 210px;
+			font-size: 18px;
+		}
+		.text-line1{
+	     	width: 100%;
+	     	margin:40px auto 20px auto;
+		}
+		.text-line1>.line1-hr{
+			color: #c7c3c3;
+			line-height: 40px;
+    		font-weight: bold;
+		}
+		.text-line1>.line1-h2{
+			font-size: 28px;
+			line-height: 45px
+		}
+		.text-line1>.line1-p{
+			font-size: 16px;
+			line-height: 30px;
+		}
+
+
+		.form1{
+			overflow: hidden;
+			min-height: 380px;
+		}
+		.form1>.form1-item{
+	    	float: left;
+	    	width: 23.2%;
+	    	margin-left: 2%;
+	    	border-radius: 10px;
+	    	padding-bottom: 20px;
+	    	overflow: hidden;
+	    	cursor: pointer;
+	    	margin-top: 10px;
+	    	box-shadow: 1px 1px 1px 2px #ddd;
+		}
+		.form1>.form1-item:hover{
+	    	margin-top: 5px;
+	    	margin-bottom: 10px;
+		}
+		.form1>.form1-item:nth-of-type(1){
+	     	margin-left: 0px;
+		}
+		.form1>.form1-item:nth-of-type(4){
+	     	padding-bottom: 10px;
+		}
+		.form1>.form1-item>img{
+	    	width: 100%;
+	    	margin-top: -1px;
+		}
+		.form1>.form1-item>.form1-item-p1{
+			line-height: 40px;
+			font-size: 18px;
+		}
+		.form1>.form1-item>.form1-item-p2{
+			line-height: 30px;
+			font-size: 16px;
+		}
+		.form1>.form1-item>.form1-item-p3{
+			line-height: 20px;
+			font-size: 16px;
+		}
+		.form1-Btn{
+	    	margin: 20px auto;
+	    	text-align: center;
+		}
+		.form1-Btn>.Btn1{
+			width: 250px;
+		    line-height: 60px;
+		    margin: 0 auto;
+		    text-align: center;
+		    border-radius: 20px;
+		    background: linear-gradient(to right,#4F3097,#652CEB);
+		    cursor: pointer;
+		    color: white;
+		    font-size: 23px;
+		    font-weight: bold;
+		}
+		.form1-Btn>.Btn1:active{
+			width: 260px;
+			font-size: 25px;
+		}
+		.fangan-form{
+			background: #F9F9F9;
+	    	padding: 20px 0;
+		}
+		.fangan-form-h2{
+			font-size: 36px;
+    		line-height: 60px;
+		}
+		.fangan-form-p{
+			line-height: 40px;
+			font-size: 18px;
+		}
+		.fangan-form-imgGround>.imgGround-item1{
+			overflow: hidden;
+		}
+		.fangan-form-imgGround>.imgGround-item1>.imgGround-item{
+         	float: left;
+         	width: 33%;
+		}
+		.imgGround-item>img{
+			width: 100%
+		}
+		.imgGround-item>p{
+			font-size: 30px;
+    		line-height: 40px;
+    		padding: 20px 0;
+		}
+		.fangan-form-imgGround>.imgGround-item2{
+			overflow: hidden;
+			margin:20px 0;
+		}
+		.fangan-form-imgGround>.imgGround-item2>.imgGround-item2{
+         	float: left;
+         	width: 33%;
+         	margin: 0 8.5%;
+		}
+		.imgGround-item2>img{
+			width: 100%
+		}
+		.imgGround-item2>p{
+			font-size: 30px;
+    		line-height: 40px;
+    		padding: 20px 0;
+		}
+		.why-text{
+			min-height: 895px;
+			width: 100%;
+			min-width: 1000px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			-webkit-background-size: cover;
+			-o-background-size: cover;
+			background-position: center 0;
+	        background-image:url('./img/why.jpg');
+		}
+		.why-text1{
+			float: left;
+    		width: 51%;
+			border: 1px solid #ddd;
+		    line-height: 150px;
+		    font-size: 28px;
+		    margin: 250px 0 0 10px;
+		    box-shadow: 3px 0px 19px 4px #ddd;
+	    }
+	    .why-text1>li{
+       	 	text-align: left;
+    		padding-left: 50px;
+       	}
+		.why-text2{
+			float: left;
+    		width: 51%;
+		    line-height: 150px;
+		    font-size: 28px;
+		    margin: 0px 0 0 10px;
+		    color: #999999;
+	    }
+	    .why-text2>li{
+       	 	text-align: left;
+    		padding-left: 50px;
+       	}
+        .why-text3{
+        	float: left;
+    		width: 51%;
+		    line-height: 150px;
+		    font-size: 28px;
+		    margin: 0px 0 0 10px;
+		    color: #999999;
+		    
+       	 }
+       	 .why-text3>li{
+       	 	text-align: left;
+    		padding-left: 50px;
+       	 }
+
+
+
+		.form2{
+			background: #F9F9F9;
+	    	padding: 20px 0;
+		}
+		.background3{
+			width: 100%;
+			min-width: 1000px;
+			position: relative;
+		}
+		.background3>img{
+			width: 100%;
+		}
+		.form3{
+	      margin: 20px auto 20px auto;
+		}
+		.form3-item{
+			float: left;
+			margin:40px 4% 0 4%;
+			width: 25%;
+			border-radius: 5px;
+			border: 1px solid #ddd;
+		}
+		.form3-item>img{
+			width: 100%;
+		}
+		.form3-item>.item-top{
+			width: 80%;
+		    height: 5px;
+		    background: #4F3097;
+		    margin:-5px auto 0 auto;
+		    border-top-left-radius: 5px;
+		    border-top-right-radius: 5px;
+		}
+		.form3-item>.item-p1{
+			line-height: 40px;
+		    font-size: 18px;
+		    margin: 30px 0 20px 0;
+		}
+		.form3-item>.item-p2{
+			line-height: 30px;
+		    font-size: 16px;
+		}
+		.form3-item>.item-p3{
+			line-height: 30px;
+		    font-size: 16px;
+		    margin:0 0 50px 0;
+		}
+		.form4{
+			background: #F9F9F9;
+	    	padding: 20px 0;
+	    	margin-top: 80px;
+		}
+		.form4-content>.form4-content-left{
+			float: left;
+		    width: 45%;
+		    padding: 0 20px 0 0;
+		    overflow: hidden;
+		    position: relative;
+		}
+		.form4-content>.form4-content-right{
+			float: right;
+		    width: 45%;
+		    padding: 0 20px 0 0;
+		    overflow: hidden;
+		}
+		.form4-content-right>.form4-ip2{
+			float: left;width: 85%;line-height: 40px;padding: 0 20px;    margin: 20px 8% 20px 0;
+			background: #F0F0F0;
+	    	border: 1px solid #c7c6c6;
+	    	border-radius: 5px;
+		}
+		.form4-content-right>.form4-tarea{
+			float: left;width: 85%;padding: 20px; margin: 20px 8% 20px 0;
+			background: #F0F0F0;
+	    	border: 1px solid #c7c6c6;
+	    	border-radius: 5px;
+		}
+		.form4-content-left>.form4-ip1{
+			float: left;width: 85%;
+			line-height: 40px;
+			padding: 0 20px 0 30px;    
+			margin: 20px 0 20px 8%;
+			background: #F0F0F0;
+	    	border: 1px solid #c7c6c6;
+	    	border-radius: 5px;
+		}
+		.form4-Btn{
+			margin-bottom: 60px;
+		}
+		.span1{
+			position: absolute;
+		    color: red;
+		    font-size: 23px;
+		    top: 33px;
+		    left: 54px;
+		}
+		.span2{
+			position: absolute;
+		    color: red;
+		    font-size: 23px;
+		    top: 115px;
+		    left: 54px;
+		}
+		.span3{
+			position: absolute;
+		    color: red;
+		    font-size: 23px;
+		    top: 200px;
+		    left: 54px;
+		}
+		.line1-hr-span{
+			color: #4B3F91;
+		}
+	</style>
+	<body>
+		<div class="showform1">
+			<div class="title main">
+				<div class="header">
+					<img class="logoimg" src="./img/naxinlogo.png">
+					<div class="tab item" id="tab">
+						<p class="tabs tabs-active">首页</p>
+						<p class="tabs">解决方案</p>
+						<p class="tabs">解决方案</p>
+						<p class="tabs">选择我们</p>
+						<p class="tabs">合作流程</p>
+						<p class="tabs">收费模式</p>
+					</div>
+					<div class="reBtn">注册</div>
+				</div>
+			</div>
+			<div class="main">
+				<div class="showform1-content">
+					<p class="showform1-p1">高效通关·实时结汇·3天退税</p>
+					<p class="showform1-p2">您的智能外贸出口管家</p>
+					<div class="showform1-Btn">
+						<div class="Btn1">马上咨询</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="text-line1 main">
+			<h2 class="line1-h2">多种优选出口贸易解决方案极速响应订单需求</h2>
+			<div  class="line1-hr">—————————————— <span class="line1-hr-span">— · —</span>  ——————————————</div>
+			<p class="line1-p">多年专注出口贸易，纬远纳信通过强大的资源整合，结合互联网致力于为您提供专业快捷的一站式</p>
+			<p class="line1-p">通关、银行结汇、垫付退税等服务，安心省心，以更低的成本助您实现产品营销全球！</p>
+		</div>
+
+		<div class="form1 main">
+			<div class="form1-item">
+				<img src="./img/show1.jpg">
+				<p class="form1-item-p1">出口通关</p>
+				<p class="form1-item-p2">国家颁发认证资质，高效通关</p>
+			</div>
+			<div class="form1-item">
+				<img src="./img/show2.jpg">
+				<p class="form1-item-p1">银行结汇</p>
+				<p class="form1-item-p2">代收贷款，实时结汇，当天到账</p>
+			</div>
+			<div class="form1-item">
+				<img src="./img/show3.jpg">
+				<p class="form1-item-p1">垫付退税</p>
+				<p class="form1-item-p2">退税垫付三天到账</p>
+			</div>
+			<div class="form1-item">
+				<img src="./img/show4.jpg">
+				<p class="form1-item-p1">国际物流</p>
+				<p class="form1-item-p3">海量线路，覆盖全球</p>
+				<p class="form1-item-p3">专业人员，诚信服务</p>
+			</div>
+		</div>
+		<div class="form1-Btn main">
+			<div class="Btn1">立即申请</div>
+		</div>
+
+        <div class="fangan-form">
+        	<div class="fangan-form-text main">
+        		<h2 class="fangan-form-h2">全方位实时提供个性化国际货运解决方案</h2>
+        		<p class="fangan-form-p">通过资源整合和集中采购，降低客户商品的物流成本，物流服务范围覆盖全国沿海重要口岸及内陆城市，为客户</p>
+        		<p class="fangan-form-p">实现网络化和本地化相结合的优质、迅捷、低成本的专业智能物流服务。</p>
+        	</div>
+        	<div class="fangan-form-imgGround main">
+        		<div class="imgGround-item1">
+        			<div class="imgGround-item">
+        				<img src="./img/fangan1.jpg">
+        				<p style="padding-right: 60px;">国际海运和空运</p>
+        			</div>
+        			<div class="imgGround-item">
+        				<img src="./img/fangan2.jpg">
+        				<p style="text-align: left;padding-left: 90px;">订舱服务</p>
+        			</div>
+        			<div class="imgGround-item">
+        				<img src="./img/fangan3.jpg">
+        				<p>拖车</p>
+        			</div>
+        		</div>
+        		<div class="imgGround-item2">
+        			<div class="imgGround-item2">
+        				<img src="./img/fangan4.jpg">
+        				<p>国际海运和空运</p>
+        			</div>
+        			<div class="imgGround-item2">
+        				<img src="./img/fangan5.jpg">
+        				<p>国际海运和空运</p>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+        <div class="why">
+        	<div class="text-line1 main">
+				<h2 class="line1-h2">为什么选择我们</h2>
+				<div  class="line1-hr">—————————————— <span class="line1-hr-span">— · —</span>  ——————————————</div>
+			</div>
+			<div class="why-text main">
+				<div class="why-text1">
+					<li>专业的团队及丰富的贸易操盘经验</li>
+				</div>
+				<div class="why-text2">
+					<li>一对一专属服务，全程可视化跟踪</li>
+				</div>
+				<div class="why-text3">
+					<li>大数据资源整合，多种优选方案极速响应</li>
+				</div>
+			</div>
+        	<div class="form1-Btn main">
+				<div class="Btn1">马上咨询</div>
+			</div>
+        </div>
+
+    	<div class="form2">
+			<div class="text-line1 main">
+				<h2 class="line1-h2">合作流程</h2>
+				<div  class="line1-hr">—————————————— <span class="line1-hr-span">— · —</span>  ——————————————</div>
+			</div>
+			<div class="background3">
+				<img src="./img/background4.jpg">
+			</div>
+		</div>
+		<div class="form3 main">
+			<div class="text-line1 main">
+				<h2 class="line1-h2">收费模式</h2>
+				<div  class="line1-hr">—————————————— <span class="line1-hr-span">— · —</span>  ——————————————</div>
+			</div>
+			<div class="form3-item">
+				<div class="item-top"></div>
+				<p class="item-p1">垫付退税</p>
+				<img src="./img/form3-01.png">
+				<p class="item-p2">那报关金额，出口1美金仅收取</p>
+				<p class="item-p3">人民币4.5分作为代理费</p>
+			</div>
+			<div class="form3-item">
+				<div class="item-top"></div>
+				<p class="item-p1">正常退税</p>
+				<img src="./img/form3-02.jpg">
+				<p class="item-p2">出口单据齐全，无须垫付退税</p>
+				<p class="item-p3">情况下，免出口代理费</p>
+			</div>
+			<div class="form3-item">
+				<div class="item-top"></div>
+				<p class="item-p1">国际货代</p>
+				<img src="./img/form3-03.jpg">
+				<p class="item-p2">多种优选拖车、报关、国际</p>
+				<p class="item-p3">物流解决方案，实报实销</p>
+			</div>
+			
+			
+		</div>
+		<div class="form4">
+				<div class="text-line1 main">
+					<h2 class="line1-h2">联系我们</h2>
+					<div  class="line1-hr">—————————————— <span class="line1-hr-span">— · —</span>  ——————————————</div>
+				</div>
+			<div class="form4-content main">
+				<div class="form4-content-left">
+					<span class="span1">*</span>
+					<input class="form4-ip1" type="text" name="tname" placeholder="姓名">
+					<span class="span2">*</span>
+					<input class="form4-ip1" type="text" name="tnum" placeholder="手机号码">
+					<span class="span3">*</span>
+					<input class="form4-ip1" type="email" name="temail" placeholder="邮箱">
+				</div>
+				<div class="form4-content-right">
+					<input class="form4-ip2" type="" name="" placeholder="城市">
+					<textarea class="form4-tarea" rows="4" placeholder="留言"></textarea>
+				</div>
+			</div>
+			<div class="form1-Btn main form4-Btn">
+				<div class="Btn1">马上咨询</div>
+			</div>
+		</div>
+    	<script type="text/javascript">
+    		window.onload = function () {
+    			var el = document.getElementById('tab');
+				var tabs = el.getElementsByTagName('p');
+				for(var i=0;i<tabs.length;i++){
+					tabs[i].index=i;
+					tabs[i].onclick=function(){
+					    for(var j=0;j<tabs.length;j++){
+							tabs[j].className='';//取消菜单样式
+							tabs[j].className='tabs';//隐藏所有的tabDiv
+					    }
+					tabs[this.index].className='tabs-active tabs';
+			     }
+			    }
+    		}
+    	</script>
+	</body>
+</html>
+
