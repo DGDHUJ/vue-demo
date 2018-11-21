@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>agentOutlet</title>
+    <link rel="icon" type="image/x-icon" href="./img/naso.ico">
 </head>
 <style type="text/css">
     *{
     	margin: 0;
     	padding: 0;
     }
-
 	html {
 	  font-size: 12px !important;
 	}
 
 	html {
-	  font-family: 'Avenir', Helvetica, Arial, sans-serif !important;
+	  font-family:'Microsoft YaHei', 'Avenir', Helvetica, Arial, sans-serif;
 	  -webkit-font-smoothing: antialiased !important;
 	  -moz-osx-font-smoothing: grayscale !important;
 	}
@@ -127,7 +127,8 @@
 	}
 	.text-line1{
      	width: 100%;
-     	margin:40px auto 20px auto;
+     	padding: 40px 0 0 0;
+     	margin:0px auto 20px auto;
 	}
 	.text-line1>.line1-hr{
 		color: #c7c3c3;
@@ -233,6 +234,7 @@
 	.form2{
 		background: #F9F9F9;
     	padding: 20px 0;
+    	min-width: 1000px
 	}
 	.background3{
 		width: 100%;
@@ -281,6 +283,7 @@
 		background: #F9F9F9;
     	padding: 20px 0;
     	margin-top: 80px;
+    	min-width: 1000px;
 	}
 	.form4-content>.form4-content-left{
 		float: left;
@@ -326,21 +329,21 @@
 		position: absolute;
 		color: red;
 		font-size: 23px;
-		top: 32px;
+		top: 29px;
 		left: 54px;
 	}
 	.span2{
 		position: absolute;
 		color: red;
 		font-size: 23px;
-		top: 115px;
+		top: 110px;
 		left: 54px;
 	}
 	.span3{
 		position: absolute;
 		color: red;
 		font-size: 23px;
-		top: 198px;
+		top: 193px;
 		left: 54px;
 	}
 	.fangan{
@@ -430,17 +433,7 @@
 			</div>
 		</div>
 	</div>
-    
-
-
-
-
-
-
-
-
-
-	<div class="text-line1 main">
+    <div class="text-line1 main" id="line1">
 		<h2 class="line1-h2">多种优选出口贸易解决方案极速响应订单需求</h2>
 		<div  class="line1-hr">—————————————— <span class="line1-hr-span">— · —</span>  ——————————————</div>
 		<p class="line1-p">多年专注出口贸易，纬远纳信通过强大的资源整合，结合互联网致力于为您提供专业快捷的一站式</p>
@@ -472,7 +465,7 @@
 	<div class="form1-Btn main">
 		<div class="Btn1">立即申请</div>
 	</div>
-   <div class="background2">
+   <div class="background2" id="line2">
      	<img src="./img/a-background.png">
      	 <div class="fangan-text">
      	 	<h2 class="fangan-text-h2">全方位实时提供个性国际货运解决方案</h2>
@@ -513,16 +506,8 @@
 	         	</div>
          	</div>
          </div>
-
-
-
      </div>
-
-
-
-
-
-	<div class="text-line1 main">
+	<div class="text-line1 main" id="line3">
 		<h2 class="line1-h2">为什么选择我们</h2>
 		<div  class="line1-hr">—————————————— <span class="line1-hr-span">— · —</span>  ——————————————</div>
 	</div>
@@ -532,7 +517,7 @@
 	<div class="form1-Btn main">
 		<div class="Btn1">马上咨询</div>
 	</div>
-	<div class="form2">
+	<div class="form2" id="line4">
 		<div class="text-line1 main">
 			<h2 class="line1-h2">合作流程</h2>
 			<div  class="line1-hr">—————————————— <span class="line1-hr-span">— · —</span>  ——————————————</div>
@@ -541,7 +526,7 @@
 			<img src="./img/background4.jpg">
 		</div>
 	</div>
-	<div class="form3 main">
+	<div class="form3 main" id="line5">
 		<div class="text-line1 main">
 			<h2 class="line1-h2">收费模式</h2>
 			<div  class="line1-hr">—————————————— <span class="line1-hr-span">— · —</span>  ——————————————</div>
@@ -595,16 +580,40 @@
 	</div>
 <script type="text/javascript">
 	window.onload=function(){
+
+ 		
+
 	   var el = document.getElementById('tab');
 		var tabs = el.getElementsByTagName('p');
 		for(var i=0;i<tabs.length;i++){
 			tabs[i].index=i;
+			console.log(i);
 			tabs[i].onclick=function(){
 			    for(var j=0;j<tabs.length;j++){
 					tabs[j].className='';//取消菜单样式
 					tabs[j].className='tabs';//隐藏所有的tabDiv
 			    }
 			tabs[this.index].className='tabs-active tabs';
+			if(this.index === 1){
+				var aa = document.getElementById('line1');
+				 window.scrollTo(0, aa.offsetTop)
+			}
+			if(this.index === 2){
+				var aa = document.getElementById('line2');
+				 window.scrollTo(0, aa.offsetTop)
+			}
+			if(this.index === 3){
+				var aa = document.getElementById('line3');
+				 window.scrollTo(0, aa.offsetTop)
+			}
+			if(this.index === 4){
+				var aa = document.getElementById('line4');
+				 window.scrollTo(0, aa.offsetTop)
+			}
+			if(this.index === 5){
+				var aa = document.getElementById('line5');
+				 window.scrollTo(0, aa.offsetTop)
+			}
 	     }
 	    }
 	}
