@@ -47,7 +47,7 @@
 			-webkit-background-size: cover;
 			-o-background-size: cover;
 			background-position: center 0;
-	        background-image:url('./img/b-background1.jpg');
+	        background-image:url('./img/b-background1.png');
 		}
 		.title{
 	      overflow: hidden;
@@ -122,18 +122,18 @@
 		}
 		.showform1-Btn>.Btn1{
 			width: 200px;
-			line-height: 45px;
+			line-height: 50px;
 			margin:0 0;
 			text-align: center;
 			border-radius: 20px;
 			  background: linear-gradient(to right,#4F3097,#652CEB); 
 			cursor: pointer;
 			color: white;
-			font-size: 16px;
+			font-size: 18px;
 		}
 		.showform1-Btn>.Btn1:active{
 			width: 210px;
-			font-size: 18px;
+			font-size: 20px;
 		}
 		.text-line1{
 	     	width: 100%;
@@ -158,6 +158,7 @@
 		.form1{
 			overflow: hidden;
 			min-height: 380px;
+			padding-left: 1px;
 		}
 		.form1>.form1-item{
 	    	float: left;
@@ -187,10 +188,12 @@
 		.form1>.form1-item>.form1-item-p1{
 			line-height: 40px;
 			font-size: 18px;
+			font-weight: bold;
 		}
 		.form1>.form1-item>.form1-item-p2{
 			line-height: 30px;
 			font-size: 16px;
+			height: 35px;
 		}
 		.form1>.form1-item>.form1-item-p3{
 			line-height: 20px;
@@ -237,7 +240,9 @@
          	width: 33%;
 		}
 		.imgGround-item>img{
-			width: 100%
+			width: 60%;
+		    min-height: 300px;
+		    text-align: center;
 		}
 		.imgGround-item>p{
 			font-size: 30px;
@@ -253,8 +258,30 @@
          	width: 33%;
          	margin: 0 8.5%;
 		}
+		.imgGround-item:hover{
+			/*box-shadow: 1px 1px 1px 2px #ddd;*/
+		}
+		.imgGround-item:hover>img{
+			width: 65%;
+		    min-height: 300px;
+		    text-align: center;
+		}
+		.imgGround-item:hover>p{
+			font-size: 32px;
+		}
+		.imgGround-item2:hover>img{
+			width: 65%;
+		    min-height: 300px;
+		    text-align: center;
+		}
+		.imgGround-item2:hover>p{
+			font-size: 32px;
+			padding: 16px 0;
+		}
 		.imgGround-item2>img{
-			width: 100%
+			width: 60%;
+		    min-height: 300px;
+		    text-align: center;
 		}
 		.imgGround-item2>p{
 			font-size: 30px;
@@ -265,7 +292,7 @@
 			min-width: 1000px;
 		}
 		.why-text{
-			min-height: 895px;
+			min-height: 600px;
 			width: 100%;
 			min-width: 1000px;
 			background-repeat: no-repeat;
@@ -273,16 +300,32 @@
 			-webkit-background-size: cover;
 			-o-background-size: cover;
 			background-position: center 0;
-	        background-image:url('./img/why.jpg');
+	        
+		}
+		.why1{
+			background-image:url('./img/b1.png');
+		}
+		.why2{
+			background-image:url('./img/b2.png');
+		}
+		.why3{
+			background-image:url('./img/b3.png');
 		}
 		.why-text1{
 			float: left;
-    		width: 51%;
-			border: 1px solid #ddd;
+    		width: 55%;
 		    line-height: 150px;
-		    font-size: 28px;
-		    margin: 250px 0 0 10px;
-		    box-shadow: 3px 0px 19px 4px #ddd;
+		    font-size: 25px;
+		    margin: 100px 0 0 10px;
+		     color: #999999;
+		    
+	    }
+	    .why-text0{
+           cursor: pointer;
+	    }
+	    .why-text-active{
+	    	box-shadow: 3px 0px 19px 4px #ddd;
+	    	color: black!important;
 	    }
 	    .why-text1>li{
        	 	text-align: left;
@@ -290,9 +333,9 @@
        	}
 		.why-text2{
 			float: left;
-    		width: 51%;
+    		width: 55%;
 		    line-height: 150px;
-		    font-size: 28px;
+		    font-size: 25px;
 		    margin: 0px 0 0 10px;
 		    color: #999999;
 	    }
@@ -302,9 +345,9 @@
        	}
         .why-text3{
         	float: left;
-    		width: 51%;
+    		width: 55%;
 		    line-height: 150px;
-		    font-size: 28px;
+		    font-size: 25px;
 		    margin: 0px 0 0 10px;
 		    color: #999999;
 		    
@@ -384,13 +427,13 @@
 		    overflow: hidden;
 		}
 		.form4-content-right>.form4-ip2{
-			float: left;width: 80%;line-height: 40px;padding: 0 20px;    margin: 20px 8% 20px 0;
+			float: right;width: 80%;line-height: 40px;padding: 0 20px;    margin: 20px 8% 20px 0;
 			background: #F0F0F0;
 	    	border: 1px solid #c7c6c6;
 	    	border-radius: 5px;
 		}
 		.form4-content-right>.form4-tarea{
-			float: left;width: 80%;padding: 20px; margin: 20px 8% 20px 0;
+			float: right;width: 80%;padding: 20px; margin: 20px 8% 20px 0;
 			background: #F0F0F0;
 	    	border: 1px solid #c7c6c6;
 	    	border-radius: 5px;
@@ -431,6 +474,15 @@
 		.line1-hr-span{
 			color: #4B3F91;
 		}
+		.why-img1{
+			float: right;
+   			margin-top: 120px;
+   			width: 40%;
+   			min-height: 540px;
+		}
+		.why-img1-1{
+			display: none;
+		}
 	</style>
 	<body>
 		<div class="showform1">
@@ -468,22 +520,22 @@
 
 		<div class="form1 main">
 			<div class="form1-item">
-				<img src="./img/show1.jpg">
+				<img src="./img/show1.png">
 				<p class="form1-item-p1">出口通关</p>
 				<p class="form1-item-p2">国家颁发认证资质，高效通关</p>
 			</div>
 			<div class="form1-item">
-				<img src="./img/show2.jpg">
+				<img src="./img/show2.png">
 				<p class="form1-item-p1">银行结汇</p>
 				<p class="form1-item-p2">代收贷款，实时结汇，当天到账</p>
 			</div>
 			<div class="form1-item">
-				<img src="./img/show3.jpg">
+				<img src="./img/show3.png">
 				<p class="form1-item-p1">垫付退税</p>
 				<p class="form1-item-p2">退税垫付三天到账</p>
 			</div>
 			<div class="form1-item">
-				<img src="./img/show4.jpg">
+				<img src="./img/show4.png">
 				<p class="form1-item-p1">国际物流</p>
 				<p class="form1-item-p3">海量线路，覆盖全球</p>
 				<p class="form1-item-p3">专业人员，诚信服务</p>
@@ -502,25 +554,25 @@
         	<div class="fangan-form-imgGround main">
         		<div class="imgGround-item1">
         			<div class="imgGround-item">
-        				<img src="./img/fangan1.jpg">
-        				<p style="padding-right: 60px;">国际海运和空运</p>
+        				<img src="./img/fangan1.png">
+        				<p style="padding-right: 20px;">国际海运和空运</p>
         			</div>
         			<div class="imgGround-item">
-        				<img src="./img/fangan2.jpg">
-        				<p style="text-align: left;padding-left: 90px;">订舱服务</p>
+        				<img src="./img/fangan2.png">
+        				<p style="text-align: left;padding-left: 130px;">订舱服务</p>
         			</div>
         			<div class="imgGround-item">
-        				<img src="./img/fangan3.jpg">
+        				<img src="./img/fangan3.png">
         				<p>拖车</p>
         			</div>
         		</div>
         		<div class="imgGround-item2">
         			<div class="imgGround-item2">
-        				<img src="./img/fangan4.jpg">
+        				<img src="./img/fangan4.png">
         				<p>国际海运和空运</p>
         			</div>
         			<div class="imgGround-item2">
-        				<img src="./img/fangan5.jpg">
+        				<img src="./img/fangan5.png">
         				<p>国际海运和空运</p>
         			</div>
         		</div>
@@ -531,14 +583,17 @@
 				<h2 class="line1-h2">为什么选择我们</h2>
 				<div  class="line1-hr">—————————————— <span class="line1-hr-span">— · —</span>  ——————————————</div>
 			</div>
-			<div class="why-text main">
-				<div class="why-text1">
+			<div class="why-text main " id="why">
+                <img class="why-img1" src="./img/b1.png">
+                <img class="why-img1 why-img1-1" src="./img/b2.png">
+                <img class="why-img1 why-img1-1" src="./img/b3.png">
+				<div class="why-text1 why-text0 why-text-active">
 					<li>专业的团队及丰富的贸易操盘经验</li>
 				</div>
-				<div class="why-text2">
+				<div class="why-text2 why-text0">
 					<li>一对一专属服务，全程可视化跟踪</li>
 				</div>
-				<div class="why-text3">
+				<div class="why-text3 why-text0">
 					<li>大数据资源整合，多种优选方案极速响应</li>
 				</div>
 			</div>
@@ -553,7 +608,7 @@
 				<div  class="line1-hr">—————————————— <span class="line1-hr-span">— · —</span>  ——————————————</div>
 			</div>
 			<div class="background3">
-				<img src="./img/background4.jpg">
+				<img src="./img/background4.png">
 			</div>
 		</div>
 		<div class="form3 main" id="line5">
@@ -571,14 +626,14 @@
 			<div class="form3-item">
 				<div class="item-top"></div>
 				<p class="item-p1">正常退税</p>
-				<img src="./img/form3-02.jpg">
+				<img src="./img/form3-02.png">
 				<p class="item-p2">出口单据齐全，无须垫付退税</p>
 				<p class="item-p3">情况下，免出口代理费</p>
 			</div>
 			<div class="form3-item">
 				<div class="item-top"></div>
 				<p class="item-p1">国际货代</p>
-				<img src="./img/form3-03.jpg">
+				<img src="./img/form3-03.png">
 				<p class="item-p2">多种优选拖车、报关、国际</p>
 				<p class="item-p3">物流解决方案，实报实销</p>
 			</div>
@@ -642,6 +697,64 @@
 					}
 			     }
 			    }
+				var tempe = document.getElementById('why');
+				var tempwhy = tempe.getElementsByTagName('div');
+				for(var m = 0; m <tempwhy.length; m++){
+					tempwhy[m].index= m;
+					tempwhy[m].onmouseover = function () {
+                        for(var n=0;n<tempwhy.length;n++){
+                        	if(n === 0){
+								tempwhy[n].className='';//取消菜单样式
+								tempwhy[n].className='why-text1 why-text0';//隐藏所有的tabDiv
+							}
+		                    if(n  === 1){
+								tempwhy[n].className='';//取消菜单样式
+								tempwhy[n].className='why-text2 why-text0';//隐藏所有的tabDiv
+							}
+							if(n  === 2){
+								tempwhy[n].className='';//取消菜单样式
+								tempwhy[n].className='why-text3 why-text0';//隐藏所有的tabDiv
+							}
+							
+					    }
+						if(this.index === 0){
+							tempe.getElementsByTagName("img")[0].className ="why-img1";
+							tempe.getElementsByTagName("img")[1].className ="why-img1 why-img1-1";
+							tempe.getElementsByTagName("img")[2].className ="why-img1 why-img1-1";
+							tempwhy[this.index].className='why-text1 why-text0 why-text-active';
+						}
+	                    if(this.index === 1){
+	                    	tempe.getElementsByTagName("img")[0].className ="why-img1 why-img1-1";
+							tempe.getElementsByTagName("img")[1].className ="why-img1";
+							tempe.getElementsByTagName("img")[2].className ="why-img1 why-img1-1";
+							tempwhy[this.index].className='why-text2 why-text0 why-text-active';
+						}
+						if(this.index === 2){
+							tempe.getElementsByTagName("img")[0].className ="why-img1 why-img1-1";
+							tempe.getElementsByTagName("img")[1].className ="why-img1 why-img1-1";
+							tempe.getElementsByTagName("img")[2].className ="why-img1";
+							tempwhy[this.index].className='why-text3 why-text0 why-text-active';
+						}
+					}
+					/*tempwhy[m].onmouseout = function () {
+                        for(var k=0;k<tempwhy.length;k++){
+                        	if(k === 0){
+								tempwhy[k].className='';//取消菜单样式
+								tempwhy[k].className='why-text1 why-text0 why-text-active';//隐藏所有的tabDiv
+							}
+		                    if(k  === 1){
+								tempwhy[k].className='';//取消菜单样式
+								tempwhy[k].className='why-text2 why-text0';//隐藏所有的tabDiv
+							}
+							if(k  === 2){
+								tempwhy[k].className='';//取消菜单样式
+								tempwhy[k].className='why-text3 why-text0';//隐藏所有的tabDiv
+							}
+							
+					    }
+					}*/
+					 
+				}
     		}
     	</script>
 	</body>
