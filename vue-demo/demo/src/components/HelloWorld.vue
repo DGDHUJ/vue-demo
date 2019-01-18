@@ -7,6 +7,7 @@
       <div class="tab" @click="_toroute(3)">Vuex-Demo</div>
       <div class="tab" @click="_toroute(4)">放大镜查看图片</div>
       <div class="tab" @click="submitForm">axios</div>
+      <div class="tab" @click="_toroute(5)">图片懒加载</div>
     </div>
   </div>
 
@@ -34,11 +35,12 @@ export default {
       if(index === 4){
         this.$router.push({path:'magnifier'})
       }
+      if(index === 5){
+        this.$router.push({path:'lazyload'})
+      }
 
     },
     submitForm () {
-      debugger
-      console.log( this.$axios);
       this.$axios.getAddressJson().then(function (res) {
         //成功之后处理逻辑
         console.log(res)

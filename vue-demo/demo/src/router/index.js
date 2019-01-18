@@ -14,6 +14,8 @@ const children = () => import('@/components/fandcvalue/children')
 const ShowVuex = () =>  import('@/components/vuexDemo/showVuex')
 const vueQuillEditor = () =>  import('@/components/vueQuillEditor/vueQuillEditor')
 const magnifier = () => import('@/components/magnifier/magnifier')
+const lazyload = () => import('@/components/lazyload')
+const aaa = () => import('@/components/aaa')
 // const HelloWorld = (resolve) => { import( '../componets/HelloWorld').then((module) => { resolve(module)})}
 // const DynamicRouter = (resolve) => { import('../componets/DynamicRouter').then((module) => { resolve(module)} )}
 Vue.use(Router)
@@ -30,6 +32,11 @@ const router  = new Router({
       component:magnifier
     },
     {
+      path:'/lazyload',
+      name:'lazyload',
+      component:lazyload
+    },
+    {
       path: '/vueQuillEditor',
       name: 'vueQuillEditor',
       component: vueQuillEditor
@@ -38,6 +45,11 @@ const router  = new Router({
       path:"/DynamicRouter/:id",
       name:'DynamicRouter',
       component: DynamicRouter
+    },
+    {
+      path:"/aaa",
+      name:'aaa',
+      component: aaa
     },
     {
       path:"/NestingRouter",
