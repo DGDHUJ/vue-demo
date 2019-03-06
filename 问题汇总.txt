@@ -1,0 +1,55 @@
+你在引入外部插件的时候，在vue那个生命周期实例化，为什么？
+
+设计到canvas绘图的插件，如zrender这种东西的实例化必须在mounted里面,
+有一些可以在created的.
+mounted应该是那些需要div作为根元素实例化的,需要使用到dom元素的
+
+
+
+箭头函数自己有this吗？
+
+箭头函数相当于return了个方法出来，相当于把当前环境指向了全局,
+所以也就是里面没有指向函数内部的this,应该是他的上级
+
+
+vue不是双向绑定的吗?
+什么情况是监听不到绑定的?
+
+
+monent 时间格式化
+
+
+
+
+就是本来你监听的是这个obj，然而你通过修改数据让这个obj新增了属性，就监听不了这些新的属性，要监听的话就用this.$set,
+js的限制，Vue不能检测到一下变动的数组
+1.利用索引直接设置一个项时，例如：vm.items[indexOfItem] = newValue
+2.当你修改数组长度时，例如：vm.items.length= newLength
+
+
+实现代码 add(2)(3) ==> 5,就是要你写一个方法，支持这种写法的
+
+
+
+
+
+this的指向问题：
+this一般指向调用它的对象
+el：func： function（）{
+console.log(this)   ==>window
+}
+func(); ==>window
+
+obj = {
+a=000;
+func: function(){
+    console.log(this);
+}
+
+}
+obj.func(); ===> obj
+tempa = obj.func();
+tempa();==> window
+
+
+

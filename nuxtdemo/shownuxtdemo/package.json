@@ -13,7 +13,11 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "nuxt": "^2.0.0"
+    "babel-polyfill": "^6.26.0",
+    "classlist-polyfill": "^1.2.0",
+    "jquery": "^3.3.1",
+    "nuxt": "^2.0.0",
+    "swiper": "^4.4.6"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
@@ -21,5 +25,11 @@
     "eslint-friendly-formatter": "^4.0.1",
     "eslint-loader": "^2.1.1",
     "eslint-plugin-vue": "^4.0.0"
+  },
+  "config": {
+    "nuxt": {
+      "host": "localhost",
+      "port": "6235"
+    }
   }
 }

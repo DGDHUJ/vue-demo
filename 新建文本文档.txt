@@ -1,0 +1,14 @@
+重修js
+
+js的运算方法
+Math.pow(2,5):2的5次幂
+Math.round(.6) 四舍五入
+Math.ceil(.6)  向上取整
+Math.floor(.6) 向下取整
+Math.abs(-5) 求绝对值
+Math.max(x,y,z) 求最大值
+Math.min(x,y,z) 求最小值
+Math.random() 生成一个大于等于0小于1.0的伪随机数
+Math.PI yuanzhoulv
+Math.E 自然对数的底数
+Math.sqrt(3) 3的平方根
