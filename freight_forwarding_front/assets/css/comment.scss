@@ -1,0 +1,203 @@
+@media screen and (min-width:350px) {
+  html {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (min-width:480px) {
+  html {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (min-width:600px) {
+  html {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (min-width:840px) {
+  html {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (min-width:960px) {
+  html {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (min-width:1280px) {
+  html {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  html {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (min-width:1780px) {
+  html {
+    font-size: 15px !important;
+  }
+}
+
+html {
+  font-size: 16px;
+  // min-width: 1200px;
+  font-family: MicrosoftYaHei !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+body {
+  background: #F4F4F4;
+}
+
+.el-input__prefix {
+  left: unset !important;
+  right: 5px !important;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a {
+  color: black;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+
+}
+
+// public
+
+._main {
+  padding: 30px 0;
+  margin: 30px auto;
+  background-color: #fff;
+  text-align: center;
+}
+
+.layout {
+  margin: 0 auto;
+  width: 1200px;
+}
+.layout-man{
+  width: 1200px;
+}
+
+@media screen and (min-width:1200px) {
+  .layout {
+    margin: 0 auto;
+    width: 1200px;
+  }
+  .layout-man{
+    width: 100%;
+  }
+}
+
+.layout-1200 {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+@media screen and (min-width:1200px) {
+  .layout-1200 {
+    margin: 0 auto;
+    width: 1200px;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  background: #f4f4f4;
+}
+
+.pageouter {
+  width: 18.75%;
+}
+
+.pagecontent {
+  width: 62.5%;
+  min-width: 1200px;
+  max-width: 1920px;
+}
+
+.pagelayout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.pagecursor {
+  cursor: pointer;
+}
+
+
+.icon_line {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-2px);
+  width: 100px;
+  height: 1px;
+}
+
+.left-icon {
+  left: 0;
+  background: -webkit-linear-gradient(left, rgba(74, 63, 145, 1), rgba(255, 255, 255, 1));
+    /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(left, rgba(74, 63, 145, 1), rgba(255, 255, 255, 1));
+  /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(left, rgba(74, 63, 145, 1), rgba(255, 255, 255, 1));
+  /* Firefox 3.6 - 15 */
+  background: linear-gradient(to left, rgba(74, 63, 145, 1), rgba(255, 255, 255, 1));
+  /* 标准的语法（必须放在最后） */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#4a3f91', GradientType=1);/*IE9*/
+}
+
+.right-icon {
+  right: 0;
+  background: -webkit-linear-gradient(right, rgba(74, 63, 145, 1), rgba(255, 255, 255, 1));
+  /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, rgba(74, 63, 145, 1), rgba(255, 255, 255, 1));
+  /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, rgba(74, 63, 145, 1), rgba(255, 255, 255, 1));
+  /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, rgba(74, 63, 145, 1), rgba(255, 255, 255, 1));
+  /* 标准的语法（必须放在最后） */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4a3f91', endColorstr='#ffffff', GradientType=1);/*IE9*/
+}
+
+.content-title {
+  margin: 0 auto;
+  padding-bottom: 20px;
+  width: 630px;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  h2 {
+    position: relative;
+    font-size: 33px;
+    color: #333;
+    font-weight: 800;
+  }
+
+  p {
+    font-size: 24px;
+  }
+}
+#MEIQIA-PANEL-HOLDER{
+  right: 100px!important;
+}

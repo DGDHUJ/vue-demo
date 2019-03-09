@@ -1,0 +1,2 @@
+window.$crisp=[["safe", true]];
+window.CRISP_WEBSITE_ID="2ec256cc-34fb-412c-85fc-10454c74575d";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
